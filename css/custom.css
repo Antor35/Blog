@@ -1,0 +1,412 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+  /*background-color: rgba(15, 0, 0, 0.3);*/
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #777bb4;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+
+
+.navItem{
+  font-size:20pt;
+}
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+  font-size: 20pt;
+  text-decoration: none;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+  /*list-style: none;*/
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+  /*border: 1px solid black;*/
+}
+.sidebar-module-inset {
+  padding: 15px;
+  /*background-color: #f5f5f5;*/
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.userinfo{
+  /*border: 1px dotted black;*/
+  width: 70%;
+}
+
+.categoryItem{
+  font-size: 20pt;
+}
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*
+ * custom classes 
+ */
+.logo{
+  float: left;
+}
+
+.readmore{
+
+   display: block;
+   text-align: center; 
+   padding: 5px;
+   background: lightgray;
+   margin-top: 101px;
+   color:darkgray;
+ }
+
+.readmore:hover{
+  background: darkgray;
+  text-decoration: none;
+}
+
+
+
+/* Modal */
+.model_container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(2, 70, 88, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms ease;
+}
+.model_container:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.model_container > div{
+  transform: translate(0px,-50px);
+  transition: all 500ms ease;
+}
+.model_container:target > div{
+  transform: translate(0px,0px);
+}
+
+._modal{
+  height: 400px;
+  width: 350px;
+  margin: auto;
+  position: absolute;
+  /*top: 0px;*/
+  right: 0px;
+  /*left: 0px;*/
+  bottom:0px;
+  background: black;
+  border: 2px solid #222;
+  padding: 20px;
+  box-shadow: 0px 0px 50px 5px black;
+}
+.modal_heading{
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    height: 60px;
+    margin-bottom: 30px;
+    color:white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22pt;
+    font-family: big john;
+    border-bottom:  2px solid #fefefe;
+}
+
+ input{
+          margin-bottom: 15px;
+          padding: 10px;
+          width: 100%;
+          box-sizing: border-box;
+          border-radius: 5px;
+          height: 50px;
+          border:0px; 
+          font-family: georgia;
+          font-size: 12pt;
+          text-align: center;
+}
+
+.signin{
+  background-color: red;
+  color: white;
+  font-size: 15pt;
+  margin-top: 10px;
+}
+.signin:hover{
+  background: yellow;
+  color: black;
+}
+.close{
+  color: white;
+  position: absolute;
+  border: 2px solid #333;
+  padding: 7px 9px 15px 9px;
+  font-family: big john;
+  background:red;
+  text-decoration: none;
+  top: 0px;
+  right: 0px;
+  transition: background 500ms;
+}
+
+.close:hover{
+  background: #444;
+  cursor: pointer;
+}
+
+
+/* sign up */
+
+.model_container_signup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(2, 70, 88, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms ease;
+}
+.model_container_signup:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.model_container_signup > div{
+  transform: translate(0px,-50px);
+  transition: all 500ms ease;
+}
+.model_container_signup:target > div{
+  transform: translate(0px,0px);
+}
+
+._modal_signup{
+  height: 790px;
+  width: 444px;
+  margin: auto;
+  position: absolute;
+  /*top: 0px;*/
+  right: 0px;
+  /*left: 0px;*/
+  bottom:0px;
+  background: black;
+  border: 2px solid #222;
+  padding: 20px;
+  box-shadow: 0px 0px 50px 5px black;
+}
+.modal_heading_signup{
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    height: 60px;
+    margin-bottom: 30px;
+    color:white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22pt;
+    font-family: big john;
+    border-bottom:  2px solid #fefefe;
+}
+
+.signup{
+  background-color: red;
+  color: white;
+  font-size: 15pt;
+  margin-top: 10px;
+}
+.signup:hover{
+  background: yellow;
+  color: black;
+}
+.close_signup{
+  color: white;
+  position: absolute;
+  border: 2px solid #333;
+  padding: 7px 9px 15px 9px;
+  font-family: big john;
+  background:red;
+  text-decoration: none;
+  top: 0px;
+  right: 0px;
+  transition: background 500ms;
+}
+
+.close_signup:hover{
+  background: #444;
+  cursor: pointer;
+}
+
+.post{
+  background: steelblue;
+  margin:auto;
+  margin-top: 10px;
+  width: 750px;
+  padding:20px; 
+  font-family: georgia;
+  font-size: 12pt;
+  text-align: center;
+}
+
+/*for footer*/
+.footer{
+  background-color: black;
+  color:white;
+  position: relative;
+  bottom: -50px;
+  font-size: 15pt;
+  font-family: big jhon;
+}
+
+.paging{
+  font-size: 50pt;
+}
+#notic{
+  font-size: 25pt;
+  color:red;
+  font-family: georgia;
+}

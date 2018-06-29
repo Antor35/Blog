@@ -1,0 +1,267 @@
+html, body{
+	font-family: 'open sars','Helvetica Neue';
+	background-color:  #f3f3f4;
+	color: #676a6c;
+	height:100%;
+	font-size: 15pt;
+}
+
+.box{
+	border: 10px red dotted;
+}
+
+#side-menu{
+	background-color: #2f4050;
+	padding: 0px;
+}
+#side-menu h1{
+	color:white;
+	text-align: center;
+	margin: 10px 0px;
+	font-size: 25px;
+	/*padding: 10px;*/
+}
+#side-menu ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#side-menu a{
+	padding: 12px 20px;
+	text-decoration: none;
+	color: #9fb1c2;
+	font-weight: bold;
+	font-size: 13pt;
+	display: block;
+}
+#side-menu .glyphicon{
+	margin-right: 12px;
+}
+
+#side-menu a:hover{
+	background-color: #293846;
+	color:#fff;
+	display: block;
+}
+
+#side-menu .active a{
+	background-color: #293846;
+	color:#fff; 
+}
+
+#side-menu .settings-btn{
+	background-color: #1ab394;
+}
+#side-menu .settings-btn a{
+	color: #fff;
+}
+#side-menu .settings-btn a:hover{
+	background-color: #1ab394;
+}
+
+#side-menu .collapsable li{
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#side-menu .collapsable a{
+	color:#9fb1c2;
+	font-size: 12pt;
+	padding: 0px 10px;
+	text-decoration: none;
+	display: block;
+}
+
+#side-menu .collapsable a:hover {
+	color:#fff;
+}
+
+#side-menu .collapsable{
+	border-left: 4px solid #1ab394;
+	background-color: #293846;
+}
+#side-menu .link > ul > li{
+	padding-bottom: 10px;  
+}
+.display-table{
+	display: table;
+	padding: 0px;
+	height:100%;
+	width: 100%;
+	/*margin-left: 0px;*/
+}
+.display-table-row{
+	display: table-row;
+    height:100%;
+}
+.display-table-cell{
+	display: table-cell;
+	float: none;
+    height:100%;
+}
+.valign-top{
+	vertical-align: top;
+}
+#nav-header{
+	background-color: white;
+	padding-bottom: 1px solid #e7eaec;
+}
+
+#nav-header #header-search-field{
+	padding-top: 17px;
+	vertical-align: center;
+	border:  none;
+	width: 300px;
+	outline: none;
+}
+
+#nav-header ul{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	color: #676a6c;
+}
+#nav-header ul li{
+	float: left;
+	margin-left: 15px;
+	padding: 17px 0px;
+}
+
+#nav-header ul .glyphicon{
+	color : #676a6c;
+}
+.label-message{
+	background-color: #1ab394;
+}
+
+#nav-header ul a{
+	text-decoration: none;
+}
+
+
+#nav-header .logout{
+	color: #676a6c;
+}
+#nav-header .logout:hover{
+	color: #676a6c;
+}
+#nav-header #wellcome{
+	margin-right: 25px;
+}
+
+#nav-header ul .label{
+	position: absolute;
+	margin-top: -15px; 
+	margin-left: -7px;
+}
+
+#nav-header .fixed-width{
+	width: 35px;
+}
+#admin-footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	background-color: #fff;
+	padding: 10px;
+	font-size: 20pt;
+	color:#676a6c;
+}
+
+.navbar-default{
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle{
+	border-color: #1ab394;
+	background-color: #1ab394;
+}
+.navbar-default .navbar-toggle:hover{
+	background-color: #1ab394;
+}
+.navbar-default .icon-bar{
+	border: 1px white solid;  
+}
+.navbar-default .navbar-toggle:focus{
+	background-color: #1ab394;
+}
+
+#content{
+	margin: 20px 0px 20px 0px;
+	background-color: #fff;
+	border-top: 4px #e7eaec solid;
+}
+
+#content header{
+	border-bottom: 1px #f3f3f4 solid;
+	padding : 10px 0px;
+}
+.page_title{
+	font-size: 14px;
+	font-weight: bold;
+	padding : 0px 0px 0px 20px;
+	margin: 0px;
+}
+
+.content-inner{
+	padding: 20px;
+}
+
+
+.user , .all-post , .all-category{
+	height: 900px;
+	width: 33%;
+	background-color: lighter;
+}
+.user-option{
+	background-color: #1facab;
+	padding : 100px;
+	margin-top: 65px;
+}
+.post-option{
+	background-color: #1facab;
+	padding : 100px;
+	margin-top: 150px;
+}
+.categoty-option{
+	background-color: #1facab;
+	padding : 100px;
+	margin-top: 270px;
+}
+
+.user-option .people, .post-option .posts, .categoty-option .categoty{
+	text-align: center;
+	text-decoration: none;
+	font-size : 15pt;
+	color: white;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin-top: 15px;
+	margin-left: 65px;
+}
+.post-option img, .categoty-option img{
+	height: 230px;
+	width: 250px;
+	border-radius: 35px;
+	margin-right: -20px;
+	margin-left: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
